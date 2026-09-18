@@ -1,0 +1,40 @@
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Arquivos de ambiente e segredos
+.env
+.env.local
+*.local
+
+# Caches Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Diretórios e caches específicos de assistentes de IA (conforme TARGET.md)
+.cursor/
+.cursorrules
+.agy/
+.windsurf/
+.claude/
+.aider*
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+.docker/
+
+# Logs e arquivos do SO
+*.log
+.DS_Store
+Thumbs.db

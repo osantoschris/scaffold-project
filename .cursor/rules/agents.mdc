@@ -1,0 +1,14 @@
+---
+description: Universal agent instructions bridge
+globs: *
+alwaysApply: true
+---
+
+# Universal Agent Instructions
+
+This project follows the universal agent guidelines defined in AGENTS.md.
+Always consult and follow:
+- `AGENTS.md` (Core rules and workflow)
+- `docs/CONTEXT.md` (Business overview)
+- `docs/ARCHITECTURE.md` (Tech stack and architecture)
+- `docs/TASKS.md` (Current backlog)

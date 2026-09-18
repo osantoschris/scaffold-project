@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: {{PROJECT_SLUG}}-app
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app/src:ro
+    ports:
+      - "${PORT:-8000}:8000"

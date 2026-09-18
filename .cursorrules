@@ -1,0 +1,8 @@
+# Ponte de Instruções para IA
+# Este projeto utiliza diretrizes neutras centralizadas em AGENTS.md.
+
+Antes de qualquer interação, leia e siga rigorosamente as diretrizes em:
+@AGENTS.md
+@docs/CONTEXT.md
+@docs/ARCHITECTURE.md
+@docs/TASKS.md
