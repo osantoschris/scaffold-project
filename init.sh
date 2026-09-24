@@ -267,6 +267,7 @@ Ative o ambiente virtual:
   \`\`\`powershell
   .\\.venv\Scripts\Activate.ps1
   \`\`\`
+  *(Caso o PowerShell restrinja scripts, execute: \`.\\.venv\\Scripts\\activate.bat\`)*
 - **Linux / macOS:**
   \`\`\`bash
   source .venv/bin/activate
@@ -327,7 +328,7 @@ fi
 # 4. Limpeza dos scripts de instalacao
 echo ""
 echo -e "${CLR_CYAN}[*] Limpando arquivos de instalacao...${CLR_RESET}"
-FILES_TO_REMOVE=("init.ps1" "init.sh" "TARGET.md" "scaffold_generator_plan.md" "template_repo_plan.md")
+FILES_TO_REMOVE=("init.bat" "init.ps1" "init.sh" "TARGET.md" "scaffold_generator_plan.md" "template_repo_plan.md")
 for f in "${FILES_TO_REMOVE[@]}"; do
     if [ -f "$PROJECT_DIR/$f" ]; then
         rm -f "$PROJECT_DIR/$f"

@@ -17,8 +17,9 @@ Este template serve como fundação ágil e robusta para qualquer novo projeto, 
 
 ### No Windows (PowerShell)
 ```powershell
-.\init.ps1
+powershell -ExecutionPolicy Bypass -File .\init.ps1
 ```
+> **Alternativa rápida:** Você também pode rodar `.\init.bat` no terminal ou dar um duplo-clique no arquivo `init.bat` pelo Windows Explorer.
 
 ### No Linux & macOS (Bash/Zsh)
 ```bash
@@ -33,4 +34,4 @@ chmod +x ./init.sh
 - Criará automaticamente um ambiente virtual (`.venv`) usando o Python escolhido.
 - Instalará os pacotes listados em `requirements.txt`.
 - Criará o arquivo `.env` seguro.
-- **Limpeza (Auto-Destruição):** Por fim, ele apagará a si mesmo (`init.ps1`, `init.sh` e afins), deixando o seu repositório perfeitamente limpo, funcional e pronto para codar!
+- **Limpeza (Auto-Destruição):** Por fim, ele apagará a si mesmo (`init.bat`, `init.ps1`, `init.sh` e afins), deixando o seu repositório perfeitamente limpo, funcional e pronto para codar!

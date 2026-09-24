@@ -306,6 +306,7 @@ Ative o ambiente virtual:
   \`\`\`powershell
   .\.venv\Scripts\Activate.ps1
   \`\`\`
+  *(Caso o PowerShell restrinja scripts, execute: \`.\.venv\Scripts\activate.bat\`)*
 - **Linux / macOS:**
   \`\`\`bash
   source .venv/bin/activate
@@ -374,7 +375,7 @@ if (-not $NoVenv) {
 # Limpeza dos scripts de inicializacao
 Write-Host ""
 Write-Host "[*] Limpando arquivos de instalacao..." -ForegroundColor Cyan
-$filesToRemove = @("init.ps1", "init.sh", "TARGET.md", "scaffold_generator_plan.md", "template_repo_plan.md")
+$filesToRemove = @("init.bat", "init.ps1", "init.sh", "TARGET.md", "scaffold_generator_plan.md", "template_repo_plan.md")
 foreach ($f in $filesToRemove) {
     $fPath = Join-Path $projectDir $f
     if (Test-Path $fPath) {
